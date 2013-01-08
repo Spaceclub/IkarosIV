@@ -89,7 +89,7 @@ long sensors_internal_temp()
 int sensors_lm60(int powerPin, int readPin)
 {
   digitalWrite(powerPin, HIGH);   // Turn the LM60 on
-  analogReference(INTERNAL);      // Ref=1.1V. Okay up to 108 degC (424 + 6.25*108 = 1100mV)
+  analogReference(INTERNAL1V1);      // Ref=1.1V. Okay up to 108 degC (424 + 6.25*108 = 1100mV)
 
    analogRead(readPin);    // More robust reference voltage switch needed since pressure sensor uses 5V, not 1.1
    delay(100);             // Disregard the 1st conversions after changing ref (p.256) and allow reference to settle.
