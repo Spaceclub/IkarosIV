@@ -202,11 +202,11 @@ void disable_bod_and_sleep()
    */
   unsigned char mcucr;
 
-  cli();
-  mcucr = MCUCR | (_BV(BODS) | _BV(BODSE));
-  MCUCR = mcucr;
-  MCUCR = mcucr & (~_BV(BODSE));
-  sei();
+  //cli();
+  //mcucr = MCUCR | (_BV(BODS) | _BV(BODSE));
+  //MCUCR = mcucr;
+  //MCUCR = mcucr & (~_BV(BODSE));
+  //sei();
   sleep_mode();    // Go to sleep
 }
 
