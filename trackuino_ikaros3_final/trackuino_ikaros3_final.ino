@@ -87,8 +87,8 @@ PROGMEM const prog_char TWEET18[] = "Higher than an SR-71";
 PROGMEM const prog_char TWEET19[] = "100K ft goal reached!";
 PROGMEM const prog_char TWEET20[] = "105K ft!";
 PROGMEM const prog_char TWEET21[] = "110K ft!!";
-PROGMEM const prog_char TWEET22[] = "115K ft!!!";
-PROGMEM const prog_char TWEET23[] = "120K ft!!!!";
+PROGMEM const prog_char TWEET22[] = "115K ft :0";
+PROGMEM const prog_char TWEET23[] = "120,000 ft reached";
 PROGMEM const prog_char TWEET24[] = "";
 PROGMEM const prog_char TWEET25[] = "";
 PROGMEM const prog_char TWEET26[] = "";
@@ -311,7 +311,7 @@ else if ((altitude > 25534) && (FLIGHT_STATUS < 18) && (altitude>max_altitude)) 
    tweet_send(msg);   max_altitude= altitude;
    max_altitude= altitude;
 }
-else if ((altitude > 30480) && (FLIGHT_STATUS < 19) && (altitude>max_altitude)) //30480 100,000 ft !!! :0
+else if ((altitude > 30480) && (FLIGHT_STATUS < 19) && (altitude>max_altitude)) //30480 100,000 ft :0
 {
    FLIGHT_STATUS= 19;
    strcpy_P(msg, (char*)pgm_read_word(&(TWEETS[19])));

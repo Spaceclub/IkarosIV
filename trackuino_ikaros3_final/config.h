@@ -39,7 +39,7 @@
 // - Cars:       9
 // - Home:       0
 // - IGate:      5
-#define S_CALLSIGN      "KJ6VFJ" //Jesse: KJ6VFJ
+#define S_CALLSIGN      "KJ6DYP" //Jesse: KJ6VFJ
 #define S_CALLSIGN_ID   11
 #define S2_CALLSIGN      "KJ6DYP"
 #define S2_CALLSIGN_ID   12
@@ -62,8 +62,8 @@
 // it is to noise. 
 //char APRS_COMMENT[ ]="testing";
 
-//#define APRS_COMMENT    "Project Ikaros testing"
-#define APRS_COMMENT    "Ikaros 3 bit.ly/Ib7wj7"
+#define APRS_COMMENT    "Project Ikaros testing"
+//#define APRS_COMMENT    "Ikaros 3 bit.ly/Ib7wj7"
 
 
 // --------------------------------------------------------------------------
